@@ -1,0 +1,483 @@
+﻿@charset "utf-8";
+
+/* common ui-! v_190913 */
+/** by. choies **/
+
+
+/* Buttons
+--------------------------------------------------------------------------------------- */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.btn{
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 0;
+	border-radius: 0.325rem;
+	background-color: transparent;
+	box-shadow: none;
+	cursor: pointer;
+	color: inherit;
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	-moz-appearance: none; -webkit-appearance: none; -ms-appearance: none; appearance: none;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+button:focus,
+.btn:focus{
+	outline: none !important;
+}
+
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled, input[type="reset"]:disabled,
+input[type="button"].disabled, input[type="button"]:disabled,
+button.disabled, button:disabled,
+.btn.disabled, .btn:disabled{
+	pointer-events: none;
+	opacity: 0.25;
+}
+
+/* for main button design */
+.btn.main{
+	border: 1px solid #fdbb07;
+	transition: all 0.2s ease;
+}
+
+.btn.main:hover{
+	background: #fffbf0;
+	border: 1px solid #fdbb07;
+	transition: all 0.2s ease;
+}
+
+.btn.main:active{
+	background: #fffbf0;
+	border: 1px solid #fdbb07;
+	transition: all 0.2s ease;
+}
+
+.btn.main:focus{
+	background: #fffbf0;
+	border: 1px solid #fdbb07;
+	transition: all 0.2s ease;
+} 
+
+/* for sub button design */
+.btn.sub{
+	border: 1px solid #ccc;
+	transition: all 0.2s ease;
+}
+
+.btn.sub:hover{
+	background: #f7f7f7;
+	border: 1px solid #999;
+	transition: all 0.2s ease;
+}
+
+.btn.sub:active{
+	background: #f7f7f7;
+	border: 1px solid #999;
+	transition: all 0.2s ease;
+}
+
+.btn.sub:focus{
+	background: #f7f7f7;
+	border: 1px solid #999;
+	transition: all 0.2s ease;
+} 
+
+/* for icon button */
+.btn.icon i:before{
+	margin-right: 0.5rem;
+}
+
+/* for button size */
+.btn.small{
+	padding: 0.5rem 1rem;
+	font-size: 0.8rem;
+}
+
+.btn.large{
+	padding: 1.5rem 2.5rem;
+	font-size: 1.2rem;
+}
+
+.btn.fit{
+	width: 100%;
+}
+
+@media screen and (max-width: 736px){
+	/* if-mobile */
+}
+
+
+
+/* Form
+--------------------------------------------------------------------------------------- */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input,
+select,
+textarea{
+	display: block;
+	width: 100%;
+	padding: 0 1rem;
+	border-radius: 0.325rem;
+	border: solid 1px #dddddd;
+	outline: 0;
+	color: inherit;
+	text-decoration: none;
+	-moz-appearance: none; -webkit-appearance: none; -ms-appearance: none; appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus{
+	border-color: #2ee4bb;
+	box-shadow: none;
+	cursor: auto;
+}
+
+input.disabled, input:disabled,
+select.disabled, select:disabled,
+textarea.disabled, textarea:disabled{
+	pointer-events: none;
+	opacity: 0.25;
+}
+
+label{
+	display: block;
+	color: #333;
+}
+
+/* for one-line input */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"]{
+	height: 3rem;
+}
+
+/* for file uploads */
+input[type=file]{
+
+}
+
+/* for textarea */
+textarea{
+	padding: 1rem;
+	overflow: auto;
+	width: 100%;
+	min-height: 100px;
+}
+
+/* for select */
+select{
+	background-image:
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 20px) calc(1em + 2px),
+		calc(100% - 15px) calc(1em + 2px),
+		calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+
+	width: 100%;
+	border: none;
+	border: 1px solid #EEE;
+	border-radius: 0;
+	font-size: 0.9em;
+	font-family: inherit !important;
+	padding: 1rem;
+	color: #333333;
+}
+
+select:focus{
+	background-image:
+		linear-gradient(45deg, green 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, green 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	background-position:
+		calc(100% - 15px) 1em,
+		calc(100% - 20px) 1em,
+		calc(100% - 2.5em) 0.5em;
+	background-size: 5px 5px, 5px 5px, 1px 1.5em;
+	background-repeat: no-repeat;
+	border-color: green;
+	outline: 0;
+}
+
+select:-moz-focusring{
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+select[disabled]{
+	border: 0;
+	border-bottom: 1px solid #EEE;
+	padding: 14px 0 13px 0;
+}
+
+select[multiple]{
+	vertical-align: top;
+}
+
+/* for input common */
+.redline{
+	border: 1px solid #F27474 !important;
+}
+
+
+
+/* control input
+--------------------------------------------------------------------------------------- */
+input[type=checkbox],
+input[type=radio]{
+	width: 13px;
+	height: 13px;
+}
+
+/* for custom checkbox */
+.checkbox [type="checkbox"]:checked,
+.checkbox [type="checkbox"]:not(:checked){
+	position: absolute;
+	left: -9999px;
+}
+
+.checkbox [type="checkbox"]:checked + label,
+.checkbox [type="checkbox"]:not(:checked) + label{
+	width: auto;
+	position: relative;
+	padding-left: 26px;
+	cursor:pointer;
+	line-height: 21px;
+	display: inline-block;
+	color: #666;
+}
+
+.checkbox [type="checkbox"]:checked + label:before,
+.checkbox [type="checkbox"]:not(:checked) + label:before{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #C6D8DE;
+}
+
+.checkbox [type="checkbox"]:hover + label:before{
+	background: rgb(0,44,95,0.1);
+}
+
+.checkbox [disabled]:hover + label:before{
+	background: rgb(0,0,0,0);
+}
+
+.checkbox [type="checkbox"]:checked + label:after,
+.checkbox [type="checkbox"]:not(:checked) + label:after{
+	content: "S";
+	font-family: 'icon';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background: #C6D8DE;
+	transition: all 0.2s ease;
+	text-align:center;
+	color: #FFF;
+}
+
+.checkbox [type="checkbox"]:not(:checked) + label:after{
+	opacity: 0;
+	-webkit-transform:scale(0);
+	transform:scale(0);
+}
+
+.checkbox [type="checkbox"]:checked + label:after{
+	opacity: 1;
+	-webkit-transform:scale(1);
+	transform:scale(1);
+}
+
+.checkbox [type="checkbox"]:disabled + label:after{
+	opacity:.5;
+}
+
+.from .checkbox label{
+	margin: 0;
+}
+
+
+
+/* table
+--------------------------------------------------------------------------------------- */
+.table-wrapper{
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+}
+
+table{
+	width: 100%;
+}
+
+table tbody tr{
+	border: solid 1px #ddd;
+	border-left: 0;
+	border-right: 0;
+}
+
+table tbody tr:nth-child(2n + 1){
+	/* if odd */
+}
+
+table td{
+	padding: 0.75rem 0.75rem;
+	text-align: center;
+}
+
+table th{
+	color: inherit;
+	font-size: 0.9rem;
+	padding: 0 0.75rem 0.75rem 0.75rem;
+	text-align: center;
+}
+
+table thead{
+	border-bottom: solid 2px rgba(144, 144, 144, 0.25);
+}
+
+table tfoot{
+	border-top: solid 2px rgba(144, 144, 144, 0.25);
+}
+
+
+
+/* grid
+--------------------------------------------------------------------------------------- */
+.col{
+	display: block;
+	float: left;
+}
+
+.col_12 {
+	width: 100%;
+}
+
+.col_11 {
+	width: 91.66666667%;
+}
+
+.col_10 {
+	width: 83.33333333%;
+}
+
+.col_9 {
+	width: 75%;
+}
+
+.col_8 {
+	width: 66.66666667%;
+}
+
+.col_7 {
+	width: 58.33333333%;
+}
+
+.col_6 {
+	width: 50%;
+}
+
+.col_5 {
+	width: 41.66666667%;
+}
+
+.col_4 {
+	width: 33.33333333%;
+}
+
+.col_3 {
+	width: 25%;
+}
+
+.col_2 {
+	width: 16.66666667%;
+}
+
+.col_1 {
+	width: 8.33333333%;
+}
+
+
+@media all and ( max-width: 1023px ){
+	.col{
+		float: none;
+		width: 100% !important;
+	}
+}
+
+
+/* box align
+--------------------------------------------------------------------------------------- */
+.f_cover{
+	overflow: hidden;
+}
+
+.f_left{
+	float: left;
+}
+
+.f_right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+/* font align
+--------------------------------------------------------------------------------------- */
+.t_left{
+	text-align: left;
+}
+
+.t_right{
+	text-align: right;
+}
+
+.t_center{
+	text-align: center;
+}
+
+
+
+/* etc
+--------------------------------------------------------------------------------------- */
+::selection{
+	background: rgba(135, 162, 171, 0.7);
+	color: #FFF;
+}

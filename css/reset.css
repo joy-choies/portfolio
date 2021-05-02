@@ -1,0 +1,310 @@
+﻿
+/* reset-! v_190913 */
+/** by. choies **/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&family=Poppins:wght@100;300;500;700&display=swap');
+
+/* Document
+--------------------------------------------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	appearance: none; -webkit-appearance: none; -moz-appearance: none; /* 브라우저 기본 속성 제거 */
+	backface-visibility: hidden; -webkit-backface-visibility: hidden; /* for transform */
+}
+
+html{
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%; /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+}
+
+body{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	color: #333;
+	letter-spacing: -0.4px;
+}
+
+@media (min-width: 1024px){
+	body {
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	body {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 767px){
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 340px){
+	body {
+		font-size: 1em;
+	}
+}
+
+
+
+/* Sections
+--------------------------------------------------------------------------------------- */
+main {
+	display: block;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+
+
+/* Grouping content
+--------------------------------------------------------------------------------------- */
+ol,
+ul,
+li{
+	list-style: none;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+
+
+/* table
+--------------------------------------------------------------------------------------- */
+table{
+	border-collapse: collapse; border-spacing: 0;
+}
+
+td, th { 
+	padding: 0; 
+}
+
+
+
+/* Text-level semantics
+--------------------------------------------------------------------------------------- */
+a {
+	background-color: transparent;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus,
+a:active{
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+sub,
+sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+
+
+/* Embedded content
+--------------------------------------------------------------------------------------- */
+img {
+	border: none;
+}
+
+
+
+/* Forms
+--------------------------------------------------------------------------------------- */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: 1.15;
+	margin: 0;
+	padding: 0;
+	display: block;
+	vertical-align: middle;
+	white-space: normal;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	appearance: none !important; -webkit-appearance: none !important; -moz-appearance: none !important;
+}
+
+button:focus,
+input:focus,
+optgroup:focus,
+select:focus,
+textarea:focus{
+	outline:0;
+}
+
+button,
+input {
+ 	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+select::-ms-expand{
+	display:none !important;
+}
+
+select option{
+	font-family:inherit !important;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+label{
+	font-family: inherit;
+	color: inherit;
+	font-size: 1rem;
+
+}
+
+fieldset{
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+legend {
+	box-sizing: border-box;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	color: inherit;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
+
+/* Interactive
+--------------------------------------------------------------------------------------- */
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+
+
+/* font-face
+--------------------------------------------------------------------------------------- */
+@font-face{ 
+	font-family:"fontLight";
+	font-style:normal;
+	font-weight:normal;
+	src:url(.eot);
+	src:local('※'), url('.woff') 
+	format('woff');
+}
+@font-face{ 
+	font-family:"icon"; 
+	font-style:normal; 
+	font-weight:normal; 
+	src:url('.eot'); 
+	src:local('※'), url('.woff')
+	format('woff'); 
+}

@@ -1,0 +1,182 @@
+[
+	{
+		"project" : "계룡시 문화관광 제안시안",
+		"date" : "2021.03",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item18-1.jpg",
+			"/img/project/item18-2.jpg"
+	 	]
+	},
+	{
+		"project" : "목원대학교 통합예약서비스 구축",
+		"date" : "2021.02",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item17-1.jpg",
+			"/img/project/item17-2.jpg"
+		]
+	},
+	{
+		"project" : "대전 유성구청 대표행정",
+		"date" : "2021.01",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item16-1.jpg",
+			"/img/project/item16-2.jpg"
+		]
+	},
+	{
+		"project" : "한국화학연구원 대표 홈페이지",
+		"date" : "2020.12",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item15-1.jpg",
+			"/img/project/item15-2.jpg"
+      ]
+	},
+	{
+		"project" : "KED 빅데이터 상황실",
+		"date" : "2020.11",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item14-1.jpg",
+			"/img/project/item14-2.jpg"
+		]
+	},
+	{
+		"project" : "홍성군 통합 홈페이지",
+		"date" : "2020.10",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item13-1.jpg",
+			"/img/project/item13-2.jpg"
+		]
+	},
+	{
+		"project" : "대전중구 문화관광",
+		"date" : "2020.08",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item11-1.jpg",
+			"/img/project/item11-2.jpg"
+		]
+	},
+	{
+		"project" : "한국해양교통안전공단",
+		"date" : "2021.07",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item10-1.jpg",
+			"/img/project/item10-2.jpg"
+		]
+	},
+	{
+		"project" : "해양안전교육포털",
+		"date" : "2020.07",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item09-1.jpg",
+			"/img/project/item09-2.jpg"
+		]
+	},
+	{
+		"project" : "금산글로벌트레이드",
+		"date" : "2020.04",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item07-1.jpg",
+			"/img/project/item07-2.jpg"
+		]
+	},
+	{
+		"project" : "세종충남대병원",
+		"date" : "2020.03",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item12-1.jpg",
+			"/img/project/item12-2.jpg"
+		]
+	},
+	{
+		"project" : "예산황새공원",
+		"date" : "2020.02",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item06-1.jpg",
+			"/img/project/item06-2.jpg"
+		]
+	},
+	{
+		"project" : "KIA eLead App",
+		"date" : "2018-9 총 3.5개월",
+		"url" : "https://xd.adobe.com/view/831efd99-1fee-499c-44b2-420980cd7b5c-f52f/",
+		"info" : "디자인 100% / 퍼블리싱 50%",
+		"img" : [
+			"/img/project/item05-1.jpg",
+			"/img/project/item05-2.jpg"
+		]
+	},
+	{
+		"project" : "Hyundai H-way",
+		"date" : "2019.02-04",
+		"url" : "",
+		"info" : "디자인 100% / 퍼블리싱 100%",
+		"img" : [
+			"/img/project/item04-1.jpg",
+			"/img/project/item04-2.jpg"
+		]
+	},
+	{
+		"project" : "과학기술인재정책 플랫폼",
+		"date" : "2018",
+		"url" : "https://hrstpolicy.re.kr/kistep/kr/main.html",
+		"info" : "디자인 100% / 퍼블리싱 100%",
+		"img" : [
+			"/img/project/item03-1.jpg",
+			"/img/project/item03-2.jpg"
+		]
+	},
+	{
+		"project" : "경기통계",
+		"date" : "2017",
+		"url" : "https://hrstpolicy.re.kr/kistep/kr/main.html",
+		"info" : "디자인 50% / 퍼블리싱 100%",
+		"img" : [
+			"/img/project/item02-1.jpg",
+			"/img/project/item02-2.jpg"
+		]
+	},
+	{
+		"project" : "한기평 제안관리시스템",
+		"date" : "2016",
+		"url" : "",
+		"info" : "디자인 100% / 퍼블리싱 100%",
+		"img" : [
+			"/img/project/item01-1.jpg",
+			"/img/project/item01-2.jpg"
+		]
+	},
+	{
+		"project" : "인포그래픽작업물",
+		"date" : "2015-7",
+		"url" : "",
+		"info" : "디자인 100%",
+		"img" : [
+			"/img/project/item00-1.jpg",
+			"/img/project/item00-2.jpg"
+		]
+	}
+]

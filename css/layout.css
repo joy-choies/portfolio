@@ -1,0 +1,158 @@
+
+/* layout-! v_2021.04 */
+/** by. choies **/
+
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+
+/* common
+-------------------------------------------------------------------- */
+body {
+	overflow-x: hidden;
+	max-width: 100%;
+	width: 100%;
+	overscroll-behavior: none;
+}
+
+section {
+	position: relative;
+	min-height: 700px;
+	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+section.container {
+	/*padding: 50px 10vw;*/
+/*display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 2rem;
+margin: auto;
+place-items: center;*/
+}
+
+header{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding:30px;
+	font-family: 'Poppins';
+	font-size: 1.2rem;
+	z-index: 99999;
+	font-weight: 500;
+}
+
+.inner_wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* intro
+-------------------------------------------------------------------- */
+
+.intro{
+	background: url(../img/bg_visualText.jpg) center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.intro .inner_wrap{
+	bottom:0;
+	width: 100%;
+	height: 70vh;
+	padding: 0 5vw;
+	margin-bottom:30vh;
+	background: #fff;
+}
+
+.typed_element {
+	position: absolute;
+	bottom: 2rem;
+	font-size: 5.5em;
+	font-weight: 700;
+	font-family: 'Poppins';
+	color: #222;
+	text-transform: uppercase;
+}
+
+#sectionPin {
+	overflow: hidden;
+	background: #000;
+	color: #eee;
+}
+
+/**/
+.item {
+	object-fit: cover;
+	background: #fff;
+}
+
+
+@media screen and (min-width: 1024px){
+
+	section {
+		min-height: 100vh;
+	}
+
+	#sectionPin {
+		height: 100vh;
+		display: flex;
+		left: 0;
+	}
+
+	#sectionPin .pin-wrap {
+		height: 100vh;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 50px 10vw;
+
+	}
+
+	#sectionPin .pin-wrap .item {
+		height: 80vh;
+		width: 400px;
+	}
+
+}
+
+
+@media screen and (max-width: 1023px){
+
+	#sectionPin .pin-wrap .item {
+		height: 30rem;
+		width: 80vh;
+		margin: 5rem 10vw;
+	}
+
+
+}
+
+@media screen and (min-height: 700px){
+
+	section {
+		min-height: 100vh;
+	}
+
+}
+
+
+
+/*text*/
+
+
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
+}
