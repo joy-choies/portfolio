@@ -57,17 +57,17 @@ $(document).ready(function(){
     });
 
 
-    $('.project_item .item').click(function(){
+    // $('.project_item .item').click(function(){
 
-      let detail = $(this).html();
+    //   let detail = $(this).html();
 
-      $('.modal').fadeIn(500);
-      $('.madal_contnet').html(detail);
-      $('body').css("overflow","hidden");
-      $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-      $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+    //   $('.modal').fadeIn(500);
+    //   $('.madal_contnet').html(detail);
+    //   $('body').css("overflow","hidden");
+    //   $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+    //   $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
 
-    });
+    // });
 
 });
 
@@ -121,24 +121,27 @@ function indexAni(){
 }
 
 
-// function modalShow(){
+function modalShow(){
 
-//     let detail = $(this).html();
+  console.log("제발,,")
 
-//     $('.modal').fadeIn(500);
-//     $('.madal_contnet').html(detail);
-//     $('body').css("overflow","hidden");
-//     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-//     $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+    let detail = $(this).html();
 
-// }
+    $('.modal').fadeIn(500);
+    $('.madal_contnet').html(detail);
+    $('body').css("overflow","hidden");
+    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+}
 
 
 function modalClose(){
 
   $('.modal').fadeOut(300);
   $('.madal_contnet').html('');
-  $('body').css("overflow","overlay");
+  $('body').css("overflow","overlay-y");
+
 }
 
 
