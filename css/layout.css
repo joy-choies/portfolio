@@ -582,13 +582,13 @@ section.txt_container{
 
 @keyframes bgMotion{
 	0%{
-		background-position: 0% 100%;
+		background-position: 0% 100vh;
 	}
 	50%{
-		background-position: 0% -100%;
+		background-position: 0% -100vh;
 	}
 	100%{
-		background-position: 0% 100%;
+		background-position: 0% 100vh;
 	}
 }
 

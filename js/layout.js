@@ -62,7 +62,7 @@ $(document).ready(function(){
   //for modal
   $('body').on('click', '.project_item .item', function(){
     
-    var data = $(this).html();
+    var detail = $(this).html();
 
     $('.modal').fadeIn(500);
     $('.madal_contnet').html(detail);
@@ -101,7 +101,7 @@ function portfolioHeight(){
 
   if  (matchMedia("screen and (min-width: 1239px)").matches) {
     
-    $('.project_item .item').width($('.project_item .item').height() * 0.8 )
+    $('.project_item .item').width($('.project_item .item').height() * 0.8 );
 
   }
 
