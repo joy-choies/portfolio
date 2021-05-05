@@ -57,17 +57,20 @@ $(document).ready(function(){
     });
 
 
-    // $('.project_item .item').click(function(){
+    $('.project_item .item').click(function(){
 
-    //   let detail = $(this).html();
 
-    //   $('.modal').fadeIn(500);
-    //   $('.madal_contnet').html(detail);
-    //   $('body').css("overflow","hidden");
-    //   $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-    //   $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+  console.log("제발,,")
+      let detail = $(this).html();
+  console.log(제발,,)
 
-    // });
+      $('.modal').fadeIn(500);
+      $('.madal_contnet').html(detail);
+      $('body').css("overflow","hidden");
+      $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+      $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+    });
 
 });
 
