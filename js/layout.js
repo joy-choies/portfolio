@@ -1,42 +1,76 @@
-// choies' Script v_210425
+// choies' Script v_210505
 
 // for Porfilo item json
 // ----------------------------------------------------------------------------!
+$(document).ready(function(){
+        
+    $.ajax({
 
+        url:"js/portfilo.json",
+        type: 'GET',
+        dataType: 'json'
+
+    }).done(function(json){
+      
+      console.log('getJson!!')
+      var html = "";
+
+      $(".project_item").html('');
+
+      $.each(json, function(idx, row) {
+        
+        html = $("#portfolioItem").html()
+        .replace(/{project}/gi, row.project)
+        .replace(/{date}/gi, row.date)
+        .replace(/{url}/gi, row.url)
+        .replace(/{info}/gi, row.info)
+        .replace(/{bgColor}/gi, row.bgColor)
+        .replace(/{img_0}/gi, row.img[0])
+        .replace(/{img_1}/gi, row.img[1])
+
+        $(".project_item").append(html);
+      });
+    })
+
+});
 
 
 // window ready
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
 
-    portfolioHeight();
-    indexAni();
+  portfolioHeight();
+  indexAni();
 
 
-    $(document).on('click','nav a',function(){
+  // for nav click event
+  $(document).on('click','nav a',function(){
 
-      var targetmenu = $(this).attr('href');
+    var targetmenu = $(this).attr('href');
 
-      $('html, body').animate({
-        scrollTop : $(targetmenu).offset().top
-      },600, 'swing')
-      
-      $('section').removeClass('active');
-      $(targetmenu).addClass('active');
-    });
+    $('html, body').animate({
+      scrollTop : $(targetmenu).offset().top
+    },600, 'swing')
+    
+    $('section').removeClass('active');
+    $(targetmenu).addClass('active');
+
+  });
 
 
-    $('.project_item .item').click(function(){
 
-      let detail = $(this).html();
+  //for modal
+  $('body').on('click', '.project_item .item', function(){
+    
+    var data = $(this).html();
 
-      $('.modal').fadeIn(500);
-      $('.madal_contnet').html(detail);
-      $('body').css("overflow","hidden");
-      $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-      $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+    $('.modal').fadeIn(500);
+    $('.madal_contnet').html(detail);
+    $('body').css("overflow","hidden");
+    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
 
-      });
+  });
 
 });
 
@@ -49,6 +83,14 @@ $(window).resize(function() {
 
 });
 
+
+// window scroll top
+// ----------------------------------------------------------------------------!
+$(window).on('beforeunload', function() {
+    
+    $(window).scrollTop(0); 
+
+});
 
 
 // Function Declarations
