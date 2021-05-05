@@ -2,47 +2,16 @@
 
 // for Porfilo item json
 // ----------------------------------------------------------------------------!
-$(document).ready(function(){
 
-
-  portfolioHeight();
-  indexAni();
-
-        
-  $.ajax({
-
-      url:"js/portfilo.json",
-      type: 'GET',
-      dataType: 'json'
-
-  }).done(function(json){
-    
-    console.log('getJson!!')
-    var html = "";
-
-    $(".project_item").html('');
-
-    $.each(json, function(idx, row) {
-      
-      html = $("#portfolioItem").html()
-      .replace(/{project}/gi, row.project)
-      .replace(/{date}/gi, row.date)
-      .replace(/{url}/gi, row.url)
-      .replace(/{info}/gi, row.info)
-      .replace(/{bgColor}/gi, row.bgColor)
-      .replace(/{img_0}/gi, row.img[0])
-      .replace(/{img_1}/gi, row.img[1])
-
-      $(".project_item").append(html);
-    });
-  })
-
-});
 
 
 // window ready
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
+
+    portfolioHeight();
+    indexAni();
+
 
     $(document).on('click','nav a',function(){
 
@@ -55,6 +24,19 @@ $(document).ready(function(){
       $('section').removeClass('active');
       $(targetmenu).addClass('active');
     });
+
+
+    $('.project_item .item').click(function(){
+
+      let detail = $(this).html();
+
+      $('.modal').fadeIn(500);
+      $('.madal_contnet').html(detail);
+      $('body').css("overflow","hidden");
+      $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+      $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+      });
 
 });
 

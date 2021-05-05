@@ -126,19 +126,38 @@
 
 	<script type="text/javascript">
 		
+		$(document).ready(function(){
+		        
+		  $.ajax({
 
-		$('.project_item .item').click(function(){
+		      url:"js/portfilo.json",
+		      type: 'GET',
+		      dataType: 'json'
 
-			let detail = $(this).html();
+		  }).done(function(json){
+		    
+		    console.log('getJson!!')
+		    var html = "";
 
-			$('.modal').fadeIn(500);
-			$('.madal_contnet').html(detail);
-			$('body').css("overflow","hidden");
-			$('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-			$('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+		    $(".project_item").html('');
 
-	    });
-	    
+		    $.each(json, function(idx, row) {
+		      
+		      html = $("#portfolioItem").html()
+		      .replace(/{project}/gi, row.project)
+		      .replace(/{date}/gi, row.date)
+		      .replace(/{url}/gi, row.url)
+		      .replace(/{info}/gi, row.info)
+		      .replace(/{bgColor}/gi, row.bgColor)
+		      .replace(/{img_0}/gi, row.img[0])
+		      .replace(/{img_1}/gi, row.img[1])
+
+		      $(".project_item").append(html);
+		    });
+		  })
+
+		});
+
 	</script>
 </body>
 
