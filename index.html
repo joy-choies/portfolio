@@ -123,5 +123,22 @@
 			</div>
 		</div>
 	</script>
+
+	<script type="text/javascript">
+		
+
+		$('.project_item .item').click(function(){
+
+			let detail = $(this).html();
+
+			$('.modal').fadeIn(500);
+			$('.madal_contnet').html(detail);
+			$('body').css("overflow","hidden");
+			$('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+			$('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+	    });
+	    
+	</script>
 </body>
 
