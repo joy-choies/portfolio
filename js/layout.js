@@ -3,6 +3,11 @@
 // for Porfilo item json
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
+
+
+  portfolioHeight();
+  indexAni();
+
         
   $.ajax({
 
@@ -39,27 +44,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   
 
-  //for modal
-  $('.item').click(function(){
 
-    console.log('modalShow!');
-
-    let detail = $(this).html();
-
-
-    $('.modal').fadeIn(300);
-    $('.madal_contnet').html(detail);
-    $('body').css("overflow","hidden");
-    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
-
-
-  });
-
-  portfolioHeight();
-
-  indexAni();
-	
 });
 
 
@@ -76,13 +61,12 @@ $(window).resize(function() {
 // Function Declarations
 // ----------------------------------------------------------------------------!
 
-
 function portfolioHeight(){
 
 
   if  (matchMedia("screen and (min-width: 1239px)").matches) {
     
-    $('.pin-wrap .item').width($('.pin-wrap .item').height() * 0.8 )
+    $('.project_item .item').width($('.project_item .item').height() * 0.8 )
 
   }
 
@@ -112,6 +96,25 @@ function indexAni(){
   }
 }
 
+
+function modalShow(){
+
+  $('.item').click(function(){
+
+    console.log('modalShow!');
+
+    let detail = $(this).html();
+
+
+    $('.modal').fadeIn(300);
+    $('.madal_contnet').html(detail);
+    $('body').css("overflow","hidden");
+    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+  });
+
+}
 
 
 function modalClose(){
