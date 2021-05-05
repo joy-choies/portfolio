@@ -43,7 +43,7 @@ function horScroll (){
 
     // Our Actual Demo Code
     const hookAnimations = () => {
-      const $sectionPin = document.querySelector("#sectionPin");
+      const $project = document.querySelector("#project");
       const $slidingContent = document.querySelector(".project_item");
 
       const sectionHeightInVh = 500; //
@@ -51,8 +51,8 @@ function horScroll (){
       // Adjust wrapper
       // - Change height so that we have room to scroll in
       // - Add fix to make position: sticky work
-      $sectionPin.style.height = `${sectionHeightInVh}vh`;
-      $sectionPin.style.overflow = `visible`;
+      $project.style.height = `${sectionHeightInVh}vh`;
+      $project.style.overflow = `visible`;
 
       // Adjust content
       // - Make it stick to the top
@@ -72,8 +72,8 @@ function horScroll (){
           timeRange: 1,
           fill: "both",
           scrollOffsets: [
-            { target: $sectionPin, edge: "start", threshold: 1 },
-            { target: $sectionPin, edge: "end", threshold: 1 }
+            { target: $project, edge: "start", threshold: 1 },
+            { target: $project, edge: "end", threshold: 1 }
           ]
         })
       ).play();
@@ -103,8 +103,4 @@ function horScroll (){
 //반응형 실
 
 horScroll();
-
-// $(window).resize(function() { 
-//   location.reload();
-// });
 

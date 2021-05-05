@@ -39,11 +39,22 @@ $(document).ready(function(){
 
 });
 
+
 // window ready
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
   
+    $(document).on('click','nav a',function(){
 
+      var targetmenu = $(this).attr('href');
+
+      $('html, body').animate({
+        scrollTop : $(targetmenu).offset().top
+      },600, 'swing')
+      
+      $('section').removeClass('active');
+      $(targetmenu).addClass('active');
+    });
 
 });
 
@@ -53,6 +64,7 @@ $(document).ready(function(){
 $(window).resize(function() {
 
   portfolioHeight();
+  location.reload();
 
 });
 
@@ -99,20 +111,13 @@ function indexAni(){
 
 function modalShow(){
 
-  $('.item').click(function(){
-
-    console.log('modalShow!');
-
     let detail = $(this).html();
 
-
-    $('.modal').fadeIn(300);
+    $('.modal').fadeIn(500);
     $('.madal_contnet').html(detail);
     $('body').css("overflow","hidden");
     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
     $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
-
-  });
 
 }
 

@@ -27,7 +27,12 @@
 	<div class="wrap">
 		<header>
 			<nav>
-				<div class="logo">choies'</div>
+				<div class="logo f_left">choies'</div>
+				<ul>
+					<li><a href="#about">about</a></li>
+					<li><a href="#project">project</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 			</nav>
 		</header>
 
@@ -37,7 +42,7 @@
 			</div>
 		</section>
 
-		<section class="about txt_container">
+		<section id="about" class="about txt_container">
 			<div class="txt_inner">
 				<div class="title col col_6">
 					<div>파도처럼 유연하고</div>
@@ -54,17 +59,17 @@
 			</div>
 		</section>
 
-		<section id="sectionPin" class="project">
+		<section id="project" class="project">
 			<div class="title">
 				<h1>project</h1>
 				<p>제가 진행한 프로젝트들 중 대표적인 작업들입니다.</p>
 			</div>
-			<div class="project_item">
+			<div class="project_item" onclick="modalShow()">
 				<!-- json lisk-->
 			</div>
 		</section>
 
-		<section class="contact txt_container">
+		<section id="contact" class="contact txt_container">
 			<div class="txt_inner">
 				<div class="title col col_8">
 					<div>혹시 다양한 직군과 함께 사용자 입장에서 생각하고</div>

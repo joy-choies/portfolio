@@ -32,8 +32,40 @@ header{
 	padding:30px;
 	font-family: 'Poppins';
 	font-size: 1.2em;
-	z-index: 99999;
 	font-weight: 500;
+	z-index: 99999;
+}
+
+header ul{
+	float: right;
+}
+
+header ul li{
+	position: relative;
+	float: left;
+	margin-left: 2rem;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+header ul li:hover{
+	color: #222;
+}
+
+header ul li:before{
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #222;
+	transition: all .3s ease-out;
+}
+
+header ul li:hover:before{
+	width: 100%;
+	transition: all .3s ease-out;
 }
 
 /* intro
@@ -60,16 +92,16 @@ header{
 .typed_element {
 	position: absolute;
 	bottom: 2rem;
-	font-size: 7em;
+	font-size: 6.5em;
 	font-weight: 700;
 	font-family: 'Poppins';
 	color: #222;
 	text-transform: uppercase;
 }
 
-#sectionPin {
+#project {
 	overflow: hidden;
-	background: #000;
+	background: #111;
 	color: #eee;
 }
 
@@ -208,7 +240,7 @@ section.txt_container{
 /* project
 -------------------------------------------------------------------- */
 
-#sectionPin .title h1{
+#project .title h1{
 	font-size: 6em;
 	font-weight: 500;
 	font-family: 'Poppins';
@@ -333,7 +365,7 @@ section.txt_container{
 	top: 0;
 	right: 0;
 	font-size: 2.5rem;
-	color: #aaa;
+	color: #e4e4e4;
 }
 
 .madal_contnet .cover{
@@ -341,11 +373,10 @@ section.txt_container{
 }
 
 .madal_contnet .project_txt {
-	height: 50vh;
-	min-height: fit-content;
-	padding-top: 30vh;
-	text-align: center;
-	color: #fff;
+    padding-top: 30vh;
+    padding-bottom: 12vh;
+    text-align: center;
+    color: #fff;
 }
 
 .madal_contnet .project_txt *{
@@ -412,26 +443,26 @@ section.txt_container{
 		padding: 0 10vw 0 0;
 	}
 
-	#sectionPin {
+	#project {
 		height: 100vh;
 		display: flex;
 		left: 0;
 	}
 
-	#sectionPin .project_item {
+	#project .project_item {
 		height: 100vh;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 		padding: 0 50vw 0 5vw;
-		background: linear-gradient( to right, rgba(0, 0, 0, 0), 1%, rgba(0, 0, 0, 1), 3% , rgba(0, 0, 0, 1) );
+		background: linear-gradient( to right, rgba(17, 17, 17, 0), 1%, rgba(17, 17, 17, 1), 3% , rgba(17, 17, 17, 1) );
 	}
 
-	#sectionPin .title{
+	#project .title{
 		margin: 40vh 5vw;
 	}
 
-	#sectionPin .project_item .item {
+	#project .project_item .item {
 		height: 60vh;
 		width: 400px;
 		margin-right: 5rem;
@@ -446,12 +477,12 @@ section.txt_container{
 		margin-bottom: 4rem;
 	}
 
-	#sectionPin {
+	#project {
 		height: auto !important;
 		padding: 10vh 5vw;
 	}
 
-	#sectionPin .title h1{
+	#project .title h1{
 		font-size: 5em;
 	}
 }
@@ -459,18 +490,18 @@ section.txt_container{
 
 @media screen and (max-width: 1239px) and (min-width:768px){
 
-	#sectionPin .project_item .item {
+	#project .project_item .item {
 		height: 30rem;
 		width: 50%;
 		float: left;
 		margin-top: 5vw;
 	}
 
-	#sectionPin .project_item .item:nth-child(2n) {
+	#project .project_item .item:nth-child(2n) {
 		padding-left:2.5vw;
 	}
 
-	#sectionPin .project_item .item:nth-child(2n+1) {
+	#project .project_item .item:nth-child(2n+1) {
 		padding-right:2.5vw;
 	}
 
@@ -483,12 +514,12 @@ section.txt_container{
 		font-size: 5em;
 	}
 
-	#sectionPin {
+	#project {
 		height: auto !important;
 		padding: 10vh 5vw;
 	}
 
-	#sectionPin .project_item .item {
+	#project .project_item .item {
 	    width: 100%;
 	    height: 25rem;
 	    margin-top: 8vw;
@@ -514,7 +545,7 @@ section.txt_container{
 		margin-top: 3rem;
 	}
 
-	#sectionPin .project_item .item{
+	#project .project_item .item{
 		height: 16rem;
 	}
 
