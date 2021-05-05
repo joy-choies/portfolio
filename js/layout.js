@@ -6,6 +6,54 @@
 // window ready
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
+
+
+  $.ajax({
+
+      url:"js/portfilo.json",
+        type: 'GET',
+        dataType: 'json'
+
+    }).done(function(json){
+      
+      console.log('getJson!!')
+      var html = "";
+
+      $(".project_item").html('');
+
+      $.each(json, function(idx, row) {
+        
+        html = $("#portfolioItem").html()
+        .replace(/{project}/gi, row.project)
+        .replace(/{date}/gi, row.date)
+        .replace(/{url}/gi, row.url)
+        .replace(/{info}/gi, row.info)
+        .replace(/{img_0}/gi, row.img[0])
+        .replace(/{img_1}/gi, row.img[1])
+
+        $(".project_item").append(html);
+      });
+    })
+
+
+  //for modal
+  $('.item').click(function(){
+
+    let detail = $(this).html();
+
+
+    $('.modal').fadeIn(300);
+    $('.madal_contnet').html(detail);
+    $('body').css("overflow","hidden");
+    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+
+  });
+
+  portfolioHeight();
+
+  indexAni();
 	
 });
 
@@ -13,6 +61,8 @@ $(document).ready(function(){
 // window resize
 // ----------------------------------------------------------------------------!
 $(window).resize(function() {
+
+  portfolioHeight();
 
 });
 
@@ -22,8 +72,56 @@ $(window).resize(function() {
 // ----------------------------------------------------------------------------!
 
 
+function portfolioHeight(){
+
+
+  if  (matchMedia("screen and (min-width: 1239px)").matches) {
+    
+    $('.pin-wrap .item').width($('.pin-wrap .item').height() * 0.8 )
+
+  }
+
+}
+
+
+function indexAni(){
+
+  scrollAni();
+
+  $(window).scroll( function(){ scrollAni(); });
+
+    function scrollAni(){
+
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    $('.txt_inner .title div').each( function(i){
+      
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      
+      if( bottom_of_window > bottom_of_object ){
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
+  }
+}
+
+
+
+function modalClose(){
+
+  $('.modal').fadeOut(300);
+  $('.madal_contnet').html('');
+  $('body').css("overflow","overlay");
+}
+
+
+
+
 
 // main text motion
+// ----------------------------------------------------------------------------!
 document.addEventListener('DOMContentLoaded',function(event){
 
   var dataText = [ "UI/UX", "Visual design", "Publishing", "Think. Make. Creative." ];

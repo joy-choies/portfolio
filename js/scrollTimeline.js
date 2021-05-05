@@ -1,7 +1,7 @@
 
 function horScroll (){
 
-  if ($(window).width() > 1024) {
+  if ($(window).width() > 1239) {
 
     console.log(1024)
       
@@ -44,7 +44,7 @@ function horScroll (){
     // Our Actual Demo Code
     const hookAnimations = () => {
       const $sectionPin = document.querySelector("#sectionPin");
-      const $slidingContent = document.querySelector(".pin-wrap");
+      const $slidingContent = document.querySelector(".project_item");
 
       const sectionHeightInVh = 500; //
 
@@ -104,7 +104,7 @@ function horScroll (){
 
 horScroll();
 
-$(window).resize(function() { 
-  location.reload();
-});
+// $(window).resize(function() { 
+//   location.reload();
+// });
 
