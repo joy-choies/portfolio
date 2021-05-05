@@ -4,7 +4,7 @@
 		"date" : "2021.03",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "linear-gradient(#36a6a8, #058184)",
 		"img" : [
 			"/portfolio/img/project/item18-1.jpg",
 			"/portfolio/img/project/item18-2.jpg"
@@ -15,7 +15,7 @@
 		"date" : "2021.02",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#163561",
 		"img" : [
 			"/portfolio/img/project/item17-1.jpg",
 			"/portfolio/img/project/item17-2.jpg"
@@ -26,7 +26,7 @@
 		"date" : "2021.01",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "linear-gradient(#2f68c2, #104fb3)",
 		"img" : [
 			"/portfolio/img/project/item16-1.jpg",
 			"/portfolio/img/project/item16-2.jpg"
@@ -37,7 +37,7 @@
 		"date" : "2020.12",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "linear-gradient(#009e88, rgb(12 156 169))",
 		"img" : [
 			"/portfolio/img/project/item15-1.jpg",
 			"/portfolio/img/project/item15-2.jpg"
@@ -48,7 +48,7 @@
 		"date" : "2020.11",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#071223",
 		"img" : [
 			"/portfolio/img/project/item14-1.jpg",
 			"/portfolio/img/project/item14-2.jpg"
@@ -59,21 +59,10 @@
 		"date" : "2020.10",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#164571",
 		"img" : [
 			"/portfolio/img/project/item13-1.jpg",
 			"/portfolio/img/project/item13-2.jpg"
-		]
-	},
-	{
-		"project" : "대전중구 문화관광",
-		"date" : "2020.08",
-		"url" : "",
-		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
-		"img" : [
-			"/portfolio/img/project/item11-1.jpg",
-			"/portfolio/img/project/item11-2.jpg"
 		]
 	},
 	{
@@ -81,7 +70,7 @@
 		"date" : "2021.07",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#0163ac",
 		"img" : [
 			"/portfolio/img/project/item10-1.jpg",
 			"/portfolio/img/project/item10-2.jpg"
@@ -92,7 +81,7 @@
 		"date" : "2020.07",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#4172ce",
 		"img" : [
 			"/portfolio/img/project/item09-1.jpg",
 			"/portfolio/img/project/item09-2.jpg"
@@ -103,7 +92,7 @@
 		"date" : "2020.04",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#5d504d",
 		"img" : [
 			"/portfolio/img/project/item07-1.jpg",
 			"/portfolio/img/project/item07-2.jpg"
@@ -114,7 +103,7 @@
 		"date" : "2020.03",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#0b88cb",
 		"img" : [
 			"/portfolio/img/project/item12-1.jpg",
 			"/portfolio/img/project/item12-2.jpg"
@@ -125,7 +114,7 @@
 		"date" : "2020.02",
 		"url" : "",
 		"info" : "디자인 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#59af15",
 		"img" : [
 			"/portfolio/img/project/item06-1.jpg",
 			"/portfolio/img/project/item06-2.jpg"
@@ -136,7 +125,7 @@
 		"date" : "2018-9 총 3.5개월",
 		"url" : "https://xd.adobe.com/view/831efd99-1fee-499c-44b2-420980cd7b5c-f52f/",
 		"info" : "디자인 100% / 퍼블리싱 50%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#ad0819",
 		"img" : [
 			"/portfolio/img/project/item05-1.jpg",
 			"/portfolio/img/project/item05-2.jpg"
@@ -147,7 +136,7 @@
 		"date" : "2019.02-04",
 		"url" : "",
 		"info" : "디자인 100% / 퍼블리싱 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#002b5e",
 		"img" : [
 			"/portfolio/img/project/item04-1.jpg",
 			"/portfolio/img/project/item04-2.jpg"
@@ -158,7 +147,7 @@
 		"date" : "2018",
 		"url" : "https://hrstpolicy.re.kr/kistep/kr/main.html",
 		"info" : "디자인 100% / 퍼블리싱 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#252942",
 		"img" : [
 			"/portfolio/img/project/item03-1.jpg",
 			"/portfolio/img/project/item03-2.jpg"
@@ -169,7 +158,7 @@
 		"date" : "2017",
 		"url" : "https://hrstpolicy.re.kr/kistep/kr/main.html",
 		"info" : "디자인 50% / 퍼블리싱 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#003d7b",
 		"img" : [
 			"/portfolio/img/project/item02-1.jpg",
 			"/portfolio/img/project/item02-2.jpg"
@@ -180,7 +169,7 @@
 		"date" : "2016",
 		"url" : "",
 		"info" : "디자인 100% / 퍼블리싱 100%",
-		"bgColor" : "#00958f",
+		"bgColor" : "#2f2a46",
 		"img" : [
 			"/portfolio/img/project/item01-1.jpg",
 			"/portfolio/img/project/item01-2.jpg"

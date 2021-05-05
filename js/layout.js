@@ -2,15 +2,11 @@
 
 // for Porfilo item json
 // ----------------------------------------------------------------------------!
-
-// window ready
-// ----------------------------------------------------------------------------!
 $(document).ready(function(){
-
-
+        
   $.ajax({
 
-    url:"js/portfilo.json",
+      url:"js/portfilo.json",
       type: 'GET',
       dataType: 'json'
 
@@ -34,8 +30,14 @@ $(document).ready(function(){
 
       $(".project_item").append(html);
     });
-  });
+  })
 
+});
+
+// window ready
+// ----------------------------------------------------------------------------!
+$(document).ready(function(){
+  
 
   //for modal
   $('.item').click(function(){
