@@ -10,34 +10,37 @@ $(document).ready(function(){
 
   $.ajax({
 
-      url:"js/portfilo.json",
-        type: 'GET',
-        dataType: 'json'
+    url:"js/portfilo.json",
+      type: 'GET',
+      dataType: 'json'
 
-    }).done(function(json){
+  }).done(function(json){
+    
+    console.log('getJson!!')
+    var html = "";
+
+    $(".project_item").html('');
+
+    $.each(json, function(idx, row) {
       
-      console.log('getJson!!')
-      var html = "";
+      html = $("#portfolioItem").html()
+      .replace(/{project}/gi, row.project)
+      .replace(/{date}/gi, row.date)
+      .replace(/{url}/gi, row.url)
+      .replace(/{info}/gi, row.info)
+      .replace(/{bgColor}/gi, row.bgColor)
+      .replace(/{img_0}/gi, row.img[0])
+      .replace(/{img_1}/gi, row.img[1])
 
-      $(".project_item").html('');
-
-      $.each(json, function(idx, row) {
-        
-        html = $("#portfolioItem").html()
-        .replace(/{project}/gi, row.project)
-        .replace(/{date}/gi, row.date)
-        .replace(/{url}/gi, row.url)
-        .replace(/{info}/gi, row.info)
-        .replace(/{img_0}/gi, row.img[0])
-        .replace(/{img_1}/gi, row.img[1])
-
-        $(".project_item").append(html);
-      });
-    })
+      $(".project_item").append(html);
+    });
+  });
 
 
   //for modal
   $('.item').click(function(){
+
+    console.log('modalShow!');
 
     let detail = $(this).html();
 
