@@ -43,7 +43,7 @@ $(document).ready(function(){
 // window ready
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
-  
+
     $(document).on('click','nav a',function(){
 
       var targetmenu = $(this).attr('href');
@@ -56,6 +56,19 @@ $(document).ready(function(){
       $(targetmenu).addClass('active');
     });
 
+
+    $('.project_item .item').click(function(){
+
+      let detail = $(this).html();
+
+      $('.modal').fadeIn(500);
+      $('.madal_contnet').html(detail);
+      $('body').css("overflow","hidden");
+      $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+      $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+    });
+
 });
 
 
@@ -63,7 +76,6 @@ $(document).ready(function(){
 // ----------------------------------------------------------------------------!
 $(window).resize(function() {
 
-  portfolioHeight();
   location.reload();
 
 });
@@ -109,17 +121,17 @@ function indexAni(){
 }
 
 
-function modalShow(){
+// function modalShow(){
 
-    let detail = $(this).html();
+//     let detail = $(this).html();
 
-    $('.modal').fadeIn(500);
-    $('.madal_contnet').html(detail);
-    $('body').css("overflow","hidden");
-    $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
-    $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+//     $('.modal').fadeIn(500);
+//     $('.madal_contnet').html(detail);
+//     $('body').css("overflow","hidden");
+//     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
+//     $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
 
-}
+// }
 
 
 function modalClose(){
