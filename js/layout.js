@@ -134,11 +134,9 @@ function indexAni(){
 
 function modalShow(){
 
-  console.log("제발,,")
-
     let detail = $(this).html();
 
-    $('.modal').fadeIn(500);
+    $('.modal').fadeIn(400);
     $('.madal_contnet').html(detail);
     $('body').css("overflow","hidden");
     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
@@ -151,7 +149,7 @@ function modalClose(){
 
   $('.modal').fadeOut(300);
   $('.madal_contnet').html('');
-  $('body').css("overflow","overlay-y");
+  $('body').css("overflow-y","auto");
 
 }
 
