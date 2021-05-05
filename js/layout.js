@@ -62,7 +62,7 @@ $(document).ready(function(){
 
   console.log("제발,,")
       let detail = $(this).html();
-  console.log(제발,,)
+  console.log(detail)
 
       $('.modal').fadeIn(500);
       $('.madal_contnet').html(detail);
