@@ -94,8 +94,8 @@
 		"info" : "디자인 100%",
 		"bgColor" : "#5d504d",
 		"img" : [
-			"/portfolio/img/project/item07-1.jpg",
-			"/portfolio/img/project/item07-2.jpg"
+			"/portfolio/img/project/item08-1.jpg",
+			"/portfolio/img/project/item08-2.jpg"
 		]
 	},
 	{
@@ -151,17 +151,6 @@
 		"img" : [
 			"/portfolio/img/project/item03-1.jpg",
 			"/portfolio/img/project/item03-2.jpg"
-		]
-	},
-	{
-		"project" : "경기통계",
-		"date" : "2017",
-		"url" : "https://hrstpolicy.re.kr/kistep/kr/main.html",
-		"info" : "디자인 50% / 퍼블리싱 100%",
-		"bgColor" : "#003d7b",
-		"img" : [
-			"/portfolio/img/project/item02-1.jpg",
-			"/portfolio/img/project/item02-2.jpg"
 		]
 	},
 	{
