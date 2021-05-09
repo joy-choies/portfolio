@@ -70,14 +70,6 @@ $(document).ready(function(){
     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
     $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
 
-    let linkHref = $(this).find('.link').attr("href");
-
-    if (linkHref = 'none') {
-      $('.link').hide();
-    } else {
-      $('.link').show();
-    }
-
   });
 
 });
