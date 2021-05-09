@@ -72,8 +72,6 @@ $(document).ready(function(){
 
     let linkHref = $(this).find('.link').attr("href");
 
-    console.log(link)
-
     if (linkHref = 'none') {
       $('.link').hide();
     } else {
