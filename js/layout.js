@@ -13,7 +13,7 @@ $(document).ready(function(){
     }).done(function(json){
       
       console.log('getJson!!')
-      var html = "";
+      let html = "";
 
       $(".project_item").html('');
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
   // for nav click event
   $(document).on('click','nav a',function(){
 
-    var targetmenu = $(this).attr('href');
+    let targetmenu = $(this).attr('href');
 
     $('html, body').animate({
       scrollTop : $(targetmenu).offset().top
@@ -62,13 +62,23 @@ $(document).ready(function(){
   //for modal
   $('body').on('click', '.project_item .item', function(){
     
-    var detail = $(this).html();
+    let detail = $(this).html();
 
     $('.modal').fadeIn(500);
     $('.madal_contnet').html(detail);
     $('body').css("overflow","hidden");
     $('.madal_contnet .project_txt').delay(200).animate({ paddingTop: '10vh'},800, 'swing');
     $('.madal_contnet .project_txt *').delay(200).animate({ opacity: '1'},800, 'swing');
+
+    let linkHref = $(this).find('.link').attr("href");
+
+    console.log(link)
+
+    if (linkHref = 'none') {
+      $('.link').hide();
+    } else {
+      $('.link').show();
+    }
 
   });
 
@@ -116,11 +126,11 @@ function indexAni(){
 
     function scrollAni(){
 
-    var bottom_of_window = $(window).scrollTop() + $(window).height();
+    let bottom_of_window = $(window).scrollTop() + $(window).height();
 
     $('.txt_inner .title div').each( function(i){
       
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      let bottom_of_object = $(this).offset().top + $(this).outerHeight();
       
       if( bottom_of_window > bottom_of_object ){
         $(this).addClass('active');
@@ -161,7 +171,7 @@ function modalClose(){
 // ----------------------------------------------------------------------------!
 document.addEventListener('DOMContentLoaded',function(event){
 
-  var dataText = [ "UI/UX", "Visual design", "Publishing", "Think. Make. Creative." ];
+  let dataText = [ "UI/UX", "Visual design", "Publishing", "Think. Make. Creative." ];
 
   function typeWriter(text, i, fnCallback) {
 

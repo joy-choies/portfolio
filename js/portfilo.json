@@ -2,7 +2,7 @@
 	{
 		"project" : "계룡시 문화관광 제안시안",
 		"date" : "2021.03",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100%",
 		"bgColor" : "linear-gradient(#36a6a8, #058184)",
 		"img" : [
@@ -13,7 +13,7 @@
 	{
 		"project" : "목원대학교 통합예약서비스 구축",
 		"date" : "2021.02",
-		"url" : "",
+		"url" : "https://www.mokwon.ac.kr/book/",
 		"info" : "디자인 100%",
 		"bgColor" : "#163561",
 		"img" : [
@@ -24,7 +24,7 @@
 	{
 		"project" : "대전 유성구청 대표행정",
 		"date" : "2021.01",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100%",
 		"bgColor" : "linear-gradient(#2f68c2, #104fb3)",
 		"img" : [
@@ -35,7 +35,7 @@
 	{
 		"project" : "한국화학연구원 대표 홈페이지",
 		"date" : "2020.12",
-		"url" : "",
+		"url" : "https://www.krict.re.kr/",
 		"info" : "디자인 100%",
 		"bgColor" : "linear-gradient(#009e88, rgb(12 156 169))",
 		"img" : [
@@ -46,7 +46,7 @@
 	{
 		"project" : "KED 빅데이터 상황실",
 		"date" : "2020.11",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100%",
 		"bgColor" : "#071223",
 		"img" : [
@@ -57,7 +57,7 @@
 	{
 		"project" : "홍성군 통합 홈페이지",
 		"date" : "2020.10",
-		"url" : "",
+		"url" : "https://www.hongseong.go.kr/",
 		"info" : "디자인 100%",
 		"bgColor" : "#164571",
 		"img" : [
@@ -68,7 +68,7 @@
 	{
 		"project" : "한국해양교통안전공단",
 		"date" : "2021.07",
-		"url" : "",
+		"url" : "https://www.komsa.or.kr/",
 		"info" : "디자인 100%",
 		"bgColor" : "#0163ac",
 		"img" : [
@@ -79,7 +79,7 @@
 	{
 		"project" : "해양안전교육포털",
 		"date" : "2020.07",
-		"url" : "",
+		"url" : "https://www.komsa.or.kr/edu/index.do;jsessionid=2D092096A27E12B499490C9AB69AD58F",
 		"info" : "디자인 100%",
 		"bgColor" : "#4172ce",
 		"img" : [
@@ -90,7 +90,7 @@
 	{
 		"project" : "금산글로벌트레이드",
 		"date" : "2020.04",
-		"url" : "",
+		"url" : "https://insamtrade.kr/kr/",
 		"info" : "디자인 100%",
 		"bgColor" : "#5d504d",
 		"img" : [
@@ -101,7 +101,7 @@
 	{
 		"project" : "세종충남대병원",
 		"date" : "2020.03",
-		"url" : "",
+		"url" : "https://www.cnush.co.kr/",
 		"info" : "디자인 100%",
 		"bgColor" : "#0b88cb",
 		"img" : [
@@ -112,7 +112,7 @@
 	{
 		"project" : "예산황새공원",
 		"date" : "2020.02",
-		"url" : "",
+		"url" : "https://www.yesan.go.kr/stork.do",
 		"info" : "디자인 100%",
 		"bgColor" : "#59af15",
 		"img" : [
@@ -134,7 +134,7 @@
 	{
 		"project" : "Hyundai H-way",
 		"date" : "2019.02-04",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100% / 퍼블리싱 100%",
 		"bgColor" : "#002b5e",
 		"img" : [
@@ -156,7 +156,7 @@
 	{
 		"project" : "한기평 제안관리시스템",
 		"date" : "2016",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100% / 퍼블리싱 100%",
 		"bgColor" : "#2f2a46",
 		"img" : [
@@ -167,7 +167,7 @@
 	{
 		"project" : "인포그래픽작업물",
 		"date" : "2015-7",
-		"url" : "",
+		"url" : "none",
 		"info" : "디자인 100%",
 		"bgColor" : "#00958f",
 		"img" : [
