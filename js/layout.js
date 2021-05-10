@@ -39,7 +39,7 @@ $(document).ready(function(){
 // ----------------------------------------------------------------------------!
 $(document).ready(function(){
 
-  portfolioHeight();
+  //portfolioHeight();
   indexAni();
 
 
@@ -86,11 +86,11 @@ $(window).resize(function() {
 
 // window scroll top
 // ----------------------------------------------------------------------------!
-$(window).on('beforeunload', function() {
+// $(window).on('beforeunload', function() {
     
-    $(window).scrollTop(0); 
+//     $(window).scrollTop(0); 
 
-});
+// });
 
 
 // Function Declarations

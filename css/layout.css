@@ -18,7 +18,7 @@ body {
 
 section {
 	position: relative;
-	min-height: 700px;
+	min-height: 800px;
 	width: 100%;
 	max-width: 100vw;
 	overflow-x: hidden;
@@ -179,12 +179,14 @@ section.txt_container{
 
 .contact .title .btn_down a{
 	position: relative;
+	padding: 0 2px;
 }
 
 .contact .title .btn_down a:before{
 	content: "";
 	position: absolute;
 	bottom: -10px;
+	left: 0;
 	width: 0%;
 	height: 2px;
 	background: #222;
@@ -250,7 +252,7 @@ section.txt_container{
 .item {
 	position: relative;
 	object-fit: cover;
-	background: #000;
+	background: #111;
 	cursor: pointer;
 }
 
@@ -424,7 +426,7 @@ section.txt_container{
 }
 
 .madal_contnet .project_img {
-	padding: 5rem;
+	padding: 5vw;
 }
 
 .madal_contnet .project_img img {
@@ -464,7 +466,7 @@ section.txt_container{
 
 	#project .project_item .item {
 		height: 60vh;
-		width: 400px;
+		width: 35vw;
 		margin-right: 5rem;
 	}
 
@@ -490,6 +492,10 @@ section.txt_container{
 
 @media screen and (max-width: 1239px) and (min-width:768px){
 
+	#project .title h1{
+		font-size: 4em;
+	}
+
 	#project .project_item .item {
 		height: 30rem;
 		width: 50%;
@@ -514,9 +520,21 @@ section.txt_container{
 		font-size: 5em;
 	}
 
+	.txt_container .txt_inner{
+		padding: 0 10vw;
+	}
+
+	.txt_container .txt div{
+		line-height: 1.6rem;
+	}
+
 	#project {
 		height: auto !important;
-		padding: 10vh 5vw;
+		padding: 10vh 10vw;
+	}
+
+	#project .title h1{
+		font-size: 3em;
 	}
 
 	#project .project_item .item {
@@ -533,7 +551,11 @@ section.txt_container{
 	}
 
 	.about .title div{
-		height: 3.6rem;
+		height: 3rem;
+	}
+
+	.about .title div span:before{
+		height: 2px;
 	}
 
 	.contact .title div{
@@ -551,6 +573,16 @@ section.txt_container{
 
 	.madal_contnet .project_txt h2{
 		font-size: 2em;
+	}
+}
+
+
+@media screen and (max-width: 375px){
+
+
+	.contact .title div{
+		font-size: 1.3em;
+		height: 1.6rem;
 	}
 }
 
